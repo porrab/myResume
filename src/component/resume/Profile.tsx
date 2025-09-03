@@ -5,10 +5,10 @@ const Profile = () => {
       <hr className="my-2 border" />
       <p className="text-base text-gray-700 leading-relaxed">
         I am a 3rd-year Information Technology student (KMUTT) passionate about
-        Frontend Development. My experience is built upon hands-on projects such
+        Front-end Development. My experience is built upon hands-on projects such
         as 'Life Connect' and 'IT Bangmod Mobile Shop', which have provided me
         with practical skills in front-end technologies and API integration.
-        Seeking a Frontend Developer internship to contribute to a dynamic team
+        Seeking a Front-end Developer internship to contribute to a dynamic team
         and grow within an Agile environment.
       </p>
     </div>

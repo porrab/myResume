@@ -13,7 +13,7 @@ const projectData = [
     tech: ["Vue.js", "Firebase", "Tailwind CSS", "Google Maps API"],
     tagline:
       "A hackathon prototype designed to streamline access to Thai government services.",
-    role: "Frontend Developer",
+    role: "Front-end Developer",
     description: [
       "Developed a full-featured web application for digital services, focusing on user identity verification (KYC), online queuing, and document management.",
       "Managed application state and client-side routing using Pinia and Vue Router.",
@@ -40,18 +40,18 @@ const projectData = [
     role: "Full-Stack Developer (Rotational)",
     description: [
       "Collaborated within an Agile team to develop a comprehensive e-commerce platform.",
-      "Led the Frontend development for key features, including product listing pages, brand management UI, and client-side form validation.",
-      "Successfully integrated the Frontend application with backend APIs for full CRUD functionality.",
+      "Led the Front-end development for key features, including product listing pages, brand management UI, and client-side form validation.",
+      "Successfully integrated the Front-end application with backend APIs for full CRUD functionality.",
     ],
     overview:
-      "This project was a major university course where we were tasked with building a complete mobile phone e-commerce site from scratch. It was designed to be a hands-on test of everything we learned, from frontend with Vue.js to backend with Spring Boot and even infrastructure with Docker. Our team used an Agile approach with sprints, and in each sprint, we rotated roles, so everyone had a chance to work as a frontend developer, backend developer, and handle infrastructure tasks.",
+      "This project was a major university course where we were tasked with building a complete mobile phone e-commerce site from scratch. It was designed to be a hands-on test of everything we learned, from front-end with Vue.js to backend with Spring Boot and even infrastructure with Docker. Our team used an Agile approach with sprints, and in each sprint, we rotated roles, so everyone had a chance to work as a front-end developer, backend developer, and handle infrastructure tasks.",
     challenges: [
-      "As a full-stack developer, I was responsible for a wide range of tasks. On the frontend, I built the main product listing page, the UI for brand management (CRUD), and implemented form validation for the login page, including securely handling JWT tokens.",
+      "As a full-stack developer, I was responsible for a wide range of tasks. On the front-end, I built the main product listing page, the UI for brand management (CRUD), and implemented form validation for the login page, including securely handling JWT tokens.",
       "On the backend, I developed several REST APIs for user registration, login, and full CRUD operations for the sale items, which also included a search with filtering capabilities. I also implemented an email verification system and managed the database schema in MySQL.",
       "One of the most valuable skills I developed was systematic debugging. I developed a systematic debugging methodology, tracing issues from front-end network payloads through independent back-end API testing with Postman, to pinpointing root causes in the server-side logic. This process significantly reduced issue resolution time.",
     ],
     learnings:
-      "Working on this project was an incredible lesson in teamwork and the full software development lifecycle. I learned how to effectively collaborate in an Agile environment, build upon my teammates' code, and understand the responsibilities of each role. It gave me a clear picture of how frontend and backend systems connect and the small but important differences between a development and a production environment. More than any specific technology, I learned how to analyze a problem and debug it methodically from end to end.",
+      "Working on this project was an incredible lesson in teamwork and the full software development lifecycle. I learned how to effectively collaborate in an Agile environment, build upon my teammates' code, and understand the responsibilities of each role. It gave me a clear picture of how front-end and backend systems connect and the small but important differences between a development and a production environment. More than any specific technology, I learned how to analyze a problem and debug it methodically from end to end.",
     imageUrls: [integrated],
   },
   {
@@ -62,7 +62,7 @@ const projectData = [
     tech: ["Vue.js"],
     tagline:
       "An interactive restaurant simulation game built with Vue.js to practice fundamental concepts.",
-    role: "Frontend Developer",
+    role: "Front-end Developer",
     description: [
       "Built an interactive restaurant simulation game using Vue.js, architecting with a Component-based Design.",
       "Designed and implemented core game mechanics, including a dynamic scoring system and level management.",
