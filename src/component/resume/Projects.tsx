@@ -20,13 +20,13 @@ const projectData = [
       "Designed and implemented a responsive, component-based user interface with Element Plus and Tailwind CSS.",
     ],
     overview:
-      "For the CDG Hackathon 2025, our team tackled the common frustrations people face with government services: long queue times, confusing paperwork, and not knowing what they're eligible for. We designed Life Connect as a proof-of-concept to show how a single platform could fix this. My job was to take our team's Figma designs and build a working web app, handling everything on the client-side from user login, appointment booking, to document uploads using Vue.js and Firebase.",
+      "For the CDG Hackathon 2025, our team tackled the common frustrations people face with government services: long queue times, confusing paperwork, and not knowing what they're eligible for. We designed Life Connect as a proof-of-concept to show how a single platform could fix this. My role was to take our team's Figma designs and build a working web app, handling everything on the client-side from user login, appointment booking, to document uploads using Vue.js and Firebase.",
     challenges: [
-      "The main technical hurdle was a race condition. When a user logged in, the UI would try to display their data before Firebase could even confirm they were a valid user. This meant nothing would show up on the first try.",
+      "The main technical hurdle was a race condition. When a user logged in, the UI attempted to render user data before the Firebase authentication response was received. causing a race condition where no data would appear on the initial load.",
       "My solution was to refactor the data fetching flow by using Vue's lifecycle hooks. I added a loading state that paused the UI from rendering until after the app got a successful response from Firebase. This completely fixed the issue and made the user experience much more reliable.",
     ],
     learnings:
-      "This project was a huge learning experience. I got to really understand Vue's lifecycle hooks and it was my first time using TypeScript, which I had studied on my own, in a real project. I also got comfortable with the entire Firebase ecosystem, from authentication to deploying the final app. On the design side, I learned a valuable lesson: a good feature is useless if the user flow is confusing. The feedback we got about the prototype's confusing UX was tough, but super important for my growth as a developer.",
+      "This project was a huge learning experience. I got to really understand Vue's lifecycle hooks and it was my first time using TypeScript, which I had studied on my own, in a real project. I also got comfortable with the entire Firebase ecosystem, from authentication to deploying the final app. On the design side, I learned a valuable lesson: a good feature is useless if the user flow is confusing. The feedback we got about the prototype's confusing UX was challenging, but it provided an invaluable lesson on the importance of intuitive design for feature adoption.",
     imageUrls: [liveConnect],
   },
   {
@@ -48,7 +48,7 @@ const projectData = [
     challenges: [
       "As a full-stack developer, I was responsible for a wide range of tasks. On the frontend, I built the main product listing page, the UI for brand management (CRUD), and implemented form validation for the login page, including securely handling JWT tokens.",
       "On the backend, I developed several REST APIs for user registration, login, and full CRUD operations for the sale items, which also included a search with filtering capabilities. I also implemented an email verification system and managed the database schema in MySQL.",
-      "One of the most valuable skills I developed was systematic debugging. I learned to trace problems from the frontend by checking network payloads, then testing the backend APIs independently with Postman, and finally diving into the server-side logic. This process of elimination was key to solving issues efficiently.",
+      "One of the most valuable skills I developed was systematic debugging. I developed a systematic debugging methodology, tracing issues from front-end network payloads through independent back-end API testing with Postman, to pinpointing root causes in the server-side logic. This process significantly reduced issue resolution time.",
     ],
     learnings:
       "Working on this project was an incredible lesson in teamwork and the full software development lifecycle. I learned how to effectively collaborate in an Agile environment, build upon my teammates' code, and understand the responsibilities of each role. It gave me a clear picture of how frontend and backend systems connect and the small but important differences between a development and a production environment. More than any specific technology, I learned how to analyze a problem and debug it methodically from end to end.",
@@ -71,7 +71,7 @@ const projectData = [
     overview:
       "This was a mini-project for our class where the main goal was to apply our new Vue.js skills to build anything we wanted. As a team, we decided to create a fun sushi restaurant simulation game. My role involved developing several core components, including the main UI for tracking money and goals, the level management system, and the sound controls. I also designed the 'Customer Progression Class' which simulates customer behavior like random orders and time-based actions.",
     challenges: [
-      "Since this was one of our first Vue projects, the codebase quickly became complex with many different components. The biggest challenge for me was understanding my teammates' code and figuring out the data flow between all the nested components.",
+      "Since this was one of our first Vue projects, the codebase quickly became complex with many different components. The key challenge for me was understanding my teammates' code and figuring out the data flow between all the nested components.",
       "To solve this, I had to be proactive in communicating with my team. I would ask questions to understand the purpose of each part and spent time tracing how data was passed from one component to another. This forced me to get really good at debugging and understanding the overall application structure.",
     ],
     learnings:
