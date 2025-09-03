@@ -1,8 +1,17 @@
 import { Link } from "react-router-dom";
 import sushi1 from "../../assets/images/sushi_game.png";
 import sushi2 from "../../assets/images/sushi_home.png";
+import sushi3 from "../../assets/images/sushi_upgrade.png";
+import sushi_save from "../../assets/images/sushi_save.png";
+import sushi3_level from "../../assets/images/sushi_level.png";
 import liveConnect from "../../assets/images/live-connect.jpg";
+import liveConnect_booking from "../../assets/images/live-connect-booking.jpg";
+import liveConnect_profile from "../../assets/images/live-connect-profile.jpg";
+import liveConnect_file from "../../assets/images/live-connect-fileUpload.jpg";
 import integrated from "../../assets/images/integrated.png";
+import integrated_main from "../../assets/images/integrated_main.png";
+import integrated_register from "../../assets/images/integrated_register.png";
+import integrated_add from "../../assets/images/integrated_add_sale.png";
 
 const projectData = [
   {
@@ -27,7 +36,12 @@ const projectData = [
     ],
     learnings:
       "This project was a huge learning experience. I got to really understand Vue's lifecycle hooks and it was my first time using TypeScript, which I had studied on my own, in a real project. I also got comfortable with the entire Firebase ecosystem, from authentication to deploying the final app. On the design side, I learned a valuable lesson: a good feature is useless if the user flow is confusing. The feedback we got about the prototype's confusing UX was challenging, but it provided an invaluable lesson on the importance of intuitive design for feature adoption.",
-    imageUrls: [liveConnect],
+    imageUrls: [
+      liveConnect,
+      liveConnect_booking,
+      liveConnect_file,
+      liveConnect_profile,
+    ],
   },
   {
     id: "mobile-shop",
@@ -52,7 +66,12 @@ const projectData = [
     ],
     learnings:
       "Working on this project was an incredible lesson in teamwork and the full software development lifecycle. I learned how to effectively collaborate in an Agile environment, build upon my teammates' code, and understand the responsibilities of each role. It gave me a clear picture of how front-end and backend systems connect and the small but important differences between a development and a production environment. More than any specific technology, I learned how to analyze a problem and debug it methodically from end to end.",
-    imageUrls: [integrated],
+    imageUrls: [
+      integrated_main,
+      integrated,
+      integrated_add,
+      integrated_register,
+    ],
   },
   {
     id: "sushi-game",
@@ -76,10 +95,14 @@ const projectData = [
     ],
     learnings:
       "This project solidified my understanding of Vue fundamentals. It was a great lesson in teamwork and communication, especially when working on a shared codebase. I became much more comfortable with core concepts like passing data with `emit`, using `scoped slots`, and navigating between different game screens with Vue Router. It really taught me the importance of clear communication when building something complex as a team.",
-    imageUrls: [sushi1, sushi2],
+    imageUrls: [sushi2, sushi1, sushi3, sushi_save, sushi3_level],
   },
 ];
-const Projects = () => {
+
+type ProjectsProps = {
+  onProjectHover: (projectId: string | null) => void;
+};
+const Projects = ({ onProjectHover }: ProjectsProps) => {
   return (
     <div>
       <h2 className="text-2xl font-bold text-gray-800 mb-4">PROJECTS</h2>
@@ -88,7 +111,9 @@ const Projects = () => {
           <Link
             key={project.id}
             to={`/project/${project.id}`}
-            className="block p-6 border rounded-lg shadow-sm hover:shadow-lg hover:border-blue-500 transition-all duration-300"
+            onMouseEnter={() => onProjectHover(project.id)}
+            onMouseLeave={() => onProjectHover(null)}
+            className="relative block p-6 border rounded-lg shadow-sm hover:shadow-lg hover:border-blue-500 transition-all duration-300 overflow-hidden"
           >
             <h3 className="text-xl font-semibold text-blue-600">
               {project.title}

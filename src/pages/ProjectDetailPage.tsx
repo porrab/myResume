@@ -38,7 +38,7 @@ const ProjectDetailPage = () => {
       <ProjectOverview
         title={project.title}
         overview={project.overview}
-        imageUrl={project.imageUrls[0]}
+        imageUrl={project.imageUrls}
       />
 
       <ProjectSection
