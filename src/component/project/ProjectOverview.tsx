@@ -18,7 +18,7 @@ const ProjectOverview = ({
           showThumbs={false}
           infiniteLoop={true}
           autoPlay={true}
-          interval={3000}
+          interval={2000}
           showStatus={false}
         >
           {imageUrl.map((url, index) => (

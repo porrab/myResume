@@ -78,7 +78,7 @@ const projectData = [
     title: "Sushi Restaurant Game (Group Project)",
     githubUrl: "https://github.com/porrab/PROJECT2-SEC-1-ChueRaiDee",
     liveUrl: null,
-    tech: ["Vue.js"],
+    tech: ["Vue.js", "Tailwind CSS", "JSON Sever"],
     tagline:
       "An interactive restaurant simulation game built with Vue.js to practice fundamental concepts.",
     role: "Front-end Developer",

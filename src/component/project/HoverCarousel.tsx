@@ -21,7 +21,7 @@ const HoverCarousel = ({ imageUrls }: HoverCarouselProps) => {
           showThumbs={false}
           infiniteLoop={true}
           autoPlay={true}
-          interval={3000}
+          interval={1500}
           showStatus={false}
           showArrows={false}
           showIndicators={false}

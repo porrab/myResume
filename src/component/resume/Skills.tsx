@@ -11,17 +11,21 @@ const languagesAndFrameworks = [
   "Spring Boot",
   "MySQL",
   "MongoDB",
+  "XML",
+  "Firebase",
+  "Linux",
+  "Docker",
 ];
 
 const toolsAndPlatforms = [
   "Git",
   "GitHub",
-  "Docker",
   "Postman",
   "Figma",
-  "Firebase",
   "WordPress",
-  "FileZilla",
+  "VS Code",
+  "IntelliJ IDEA",
+  "n8n",
 ];
 
 const Skills = () => {

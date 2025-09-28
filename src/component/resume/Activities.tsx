@@ -9,7 +9,7 @@ const Activities = () => {
           rel="noopener noreferrer"
           className="text-xl font-semibold text-blue-600 hover:underline"
         >
-          Web Developer | AI Hackathon
+          Web Developer | AI International Hackathon
         </a>
         <p className="mt-2 text-base text-gray-700">
           Developed the official event registration website using WordPress,
