@@ -1,4 +1,4 @@
-import { useParams, Link, useNavigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { projectData } from "../component/resume/Projects";
 import ProjectHero from "../component/project/ProjectHero";
 import ProjectOverview from "../component/project/ProjectOverview";
