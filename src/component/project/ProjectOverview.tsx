@@ -26,11 +26,13 @@ const ProjectOverview = ({
               key={index}
               className="max-h-[500px] flex justify-center items-center "
             >
-              <img
-                src={url}
-                alt={`${title} screenshot ${index + 1}`}
-                className="max-w-full max-h-[500px] object-contain"
-              />
+              <div className="flex justify-center items-center">
+                <img
+                  src={url}
+                  alt={`${title} screenshot ${index + 1}`}
+                  className="max-w-full max-h-[500px] object-contain mt-auto"
+                />
+              </div>
             </div>
           ))}
         </Carousel>

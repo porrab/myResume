@@ -1,4 +1,4 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
 import { projectData } from "../component/resume/Projects";
 import ProjectHero from "../component/project/ProjectHero";
 import ProjectOverview from "../component/project/ProjectOverview";
@@ -7,26 +7,29 @@ import ProjectSection from "../component/project/ProjectSection";
 const ProjectDetailPage = () => {
   const { projectId } = useParams();
   const project = projectData.find((p) => p.id === projectId);
-
+  const navigate = useNavigate();
   if (!project) {
     return (
       <div className="text-center text-white py-20">
         <h1 className="text-4xl">Project Not Found</h1>
-        <Link
-          to="/"
-          className="text-blue-400 hover:underline mt-4 inline-block"
+        <button
+          onClick={() => navigate(-1)}
+          className="text-blue-400 hover:underline my-4 inline-block hover:cursor-pointer"
         >
-          &larr; Back to Home
-        </Link>
+          &larr; Go Back
+        </button>
       </div>
     );
   }
 
   return (
-    <div className="max-w-4xl mx-auto p-8 md:p-12 text-gray-300">
-      <Link to="/" className="text-blue-400 hover:underline mb-8 inline-block">
-        &larr; Back to Resume
-      </Link>
+    <div className="max-w-4xl mx-auto p-8 md:p-12 text-gray-200">
+      <button
+        onClick={() => navigate(-1)}
+        className="text-blue-400 hover:underline my-4 inline-block hover:cursor-pointer"
+      >
+        &larr; Go Back
+      </button>
 
       <ProjectHero
         title={project.title}

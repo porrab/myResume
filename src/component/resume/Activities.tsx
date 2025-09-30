@@ -1,7 +1,6 @@
 const Activities = () => {
   return (
-    <div className="mt-8">
-      <h2 className="text-2xl font-bold text-gray-800 mb-4">ACTIVITIES</h2>
+    <div className="">
       <div>
         <a
           href="https://sitevent.sit.kmutt.ac.th/aihack2025/"
@@ -11,7 +10,7 @@ const Activities = () => {
         >
           Web Developer | AI International Hackathon
         </a>
-        <p className="mt-2 text-base text-gray-700">
+        <p className="mt-2 text-base text-gray-200">
           Developed the official event registration website using WordPress,
           managing online sign-ups and sending automated email confirmations.
         </p>

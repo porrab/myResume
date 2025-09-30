@@ -1,5 +1,6 @@
-import { useState, useEffect } from 'react';
-import { Outlet } from 'react-router-dom';
+import { useState, useEffect } from "react";
+import { Outlet } from "react-router-dom";
+import Navbar from "./Navbar";
 
 const MainLayout = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -8,9 +9,9 @@ const MainLayout = () => {
     const handleMouseMove = (event: MouseEvent) => {
       setMousePosition({ x: event.pageX, y: event.pageY });
     };
-    window.addEventListener('mousemove', handleMouseMove);
+    window.addEventListener("mousemove", handleMouseMove);
     return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
 
@@ -20,7 +21,10 @@ const MainLayout = () => {
 
   return (
     <div style={gradientStyle} className="min-h-screen">
-      <Outlet />
+      <Navbar />
+      <main>
+        <Outlet />
+      </main>
     </div>
   );
 };

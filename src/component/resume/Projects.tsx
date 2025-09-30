@@ -12,7 +12,11 @@ import integrated from "../../assets/images/integrated.png";
 import integrated_main from "../../assets/images/integrated_main.png";
 import integrated_register from "../../assets/images/integrated_register.png";
 import integrated_add from "../../assets/images/integrated_add_sale.png";
-
+import flow from "../../assets/images/flow.png";
+import fb1 from "../../assets/images/fb1.jpg";
+import fb2 from "../../assets/images/fb2.jpg";
+import fb3 from "../../assets/images/fb3.jpg";
+import fb4 from "../../assets/images/fb4.jpg";
 const projectData = [
   {
     id: "life-connect",
@@ -72,6 +76,40 @@ const projectData = [
       integrated_add,
       integrated_register,
     ],
+  },
+  {
+    id: "fb-copilot",
+    title: "F&B SME Co-Pilot | AI-Powered Assistant",
+    githubUrl: "https://github.com/porrab/F-B_LineOA.git",
+    liveUrl: null,
+    tech: [
+      "n8n",
+      "JavaScript",
+      "LINE OA",
+      "Google Gemini API",
+      "Google Sheets",
+    ],
+    tagline:
+      "An AI-powered assistant on LINE OA to help Thai F&B SMEs reduce costs and increase sales.",
+
+    role: "Full-Stack & Automation Developer",
+    description: [
+      "Built an interactive restaurant simulation game using Vue.js, architecting with a Component-based Design.",
+      "Designed and implemented core game mechanics, including a dynamic scoring system and level management.",
+      "Integrated key interactive features such as a real-time ordering system and score-based rewards.",
+    ],
+    overview:
+      "As part of my Digital Startup course, my team identified a critical need for accessible technology among small and medium-sized F&B businesses in Thailand. We conceptualized 'F&B SME Co-Pilot', an all-in-one platform to help them thrive. My role was to bring this idea to life by building a functional MVP. I chose a modern, agile approach using n8n for serverless workflow automation and LINE OA as the user-facing app, which allowed us to validate our core features quickly without needing a dedicated frontend.",
+
+    challenges: [
+      "One key feature was the 'AI Consult'. To make it cost-effective, I designed a smart routing system. Simple, common questions are answered instantly by pulling data from a pre-filled Google Sheet acting as a simple FAQ database. Only the complex, unique queries are passed to the Google Gemini API, which significantly reduces operational costs.",
+      "For the 'Group Purchase' feature, I designed the core logic for a proof-of-concept that would enable collective purchasing. This involved writing custom JavaScript within an n8n node to architect how proximity calculations between businesses would work.",
+    ],
+
+    learnings:
+      "This project was a fantastic lesson in building practical, business-oriented solutions. I learned how to architect a serverless, event-driven backend using a low-code platform like n8n, which is incredibly powerful for rapid development. It also gave me hands-on experience with API integration for major platforms like LINE and Google AI. Looking ahead, the plan is to improve the FAQ-matching logic and migrate our data storage to a more robust database like MongoDB for better scalability.",
+
+    imageUrls: [flow, fb1, fb2, fb3, fb4],
   },
   {
     id: "sushi-game",
