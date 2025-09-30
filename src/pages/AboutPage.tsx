@@ -37,22 +37,19 @@ const AboutPage = () => {
         <h2 className="text-4xl font-bold text-gray-200 mb-6">Contact</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {/* Email */}
-          <a
-            href="mailto:your.email@gmail.com"
-            className="group flex items-center gap-3 p-4 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors duration-200"
-          >
+          <div className="group flex items-center gap-3 p-4 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors duration-200">
             <div className="p-2 bg-gray-700 rounded-full group-hover:bg-gray-600 transition-colors">
               <Mail className="w-5 h-5 text-gray-300" />
             </div>
             <div className="flex-1 min-w-0">
               <p className="text-sm text-gray-400">Email</p>
-              <p className="text-gray-200 truncate">thanaphumsani@gmail.com</p>
+              <p className="text-gray-200">thanaphumsani@gmail.com</p>
             </div>
-          </a>
+          </div>
 
           {/* GitHub */}
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/porrab"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex items-center gap-3 p-4 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors duration-200"
@@ -67,10 +64,7 @@ const AboutPage = () => {
           </a>
 
           {/* Phone */}
-          <a
-            href="tel:+66123456789"
-            className="group flex items-center gap-3 p-4 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors duration-200"
-          >
+          <div className="group flex items-center gap-3 p-4 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors duration-200">
             <div className="p-2 bg-gray-700 rounded-full group-hover:bg-gray-600 transition-colors">
               <Phone className="w-5 h-5 text-gray-300" />
             </div>
@@ -78,7 +72,7 @@ const AboutPage = () => {
               <p className="text-sm text-gray-400">Phone</p>
               <p className="text-gray-200">0968036214</p>
             </div>
-          </a>
+          </div>
         </div>
       </section>
     </main>
